@@ -319,6 +319,8 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
   display: none;
   padding: 5px;
   cursor: pointer;
+  z-index: 1;
+  pointer-events: auto;
 }
 
 /*yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
@@ -730,6 +732,13 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
 yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy for javascript*/
+.nun {
+  display: none;
+  transition: 0.5s;
+}
+.sum {
+  display: block;
+}
 
 .something {
   visibility: visible;
@@ -739,4 +748,30 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy for javascript*/
 .nothing {
   visibility: hidden;
   transition: 0.8s;
+}
+
+.sticky {
+  position: fixed;
+}
+
+.sticky-main {
+  font-size: 18px;
+  position: absolute;
+  top: 0%;
+  background-color: white;
+  width: 100%;
+  box-shadow: 1px 1px 2px 1px rgba(7, 5, 5, 0.221);
+
+  position: fixed;
+}
+
+.sticky-header {
+  display: flex;
+  padding: 15px;
+  gap: 24px;
+  cursor: pointer;
+}
+
+.sticky-header a {
+  color: #e67700;
 }
