@@ -7,6 +7,11 @@ const stickyHeader = document.querySelector(".sticky-main");
 const modalContainer = document.querySelector(".modal-container");
 const closeModal = document.querySelector(".close-modal");
 const openModal = document.querySelector(".store-link");
+//slider props
+const petSlide = document.querySelector(".woof-slider ");
+const navDots = document.querySelector(".navigation-dots");
+const left = document.querySelector("#left-one");
+const right = document.querySelector("#right-one");
 
 //
 //script toggle nav
@@ -42,3 +47,5 @@ const ObserveSticky = new IntersectionObserver(stickyFunction, {
 });
 
 ObserveSticky.observe(mainpage);
+
+//carousel component script

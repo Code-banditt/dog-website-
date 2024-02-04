@@ -417,6 +417,10 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 }
 
 .pet {
+  background-image: url("../img/Jessica\ Kowalski2.png");
+  background-size: cover;
+  color: white;
+
   box-shadow: 0px 1px 1px 1px rgb(134, 134, 134);
   border-radius: 20px;
   font-size: 14px;
@@ -447,14 +451,21 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 .pet-text h2 {
   font-size: 18px;
   font-weight: 500;
+  color: white;
 }
 
 .pet-text h3 {
   font-weight: 500;
+  color: white;
 }
 
 .pet-text h4 {
   font-weight: 500;
+  color: white;
+}
+
+.pet-text strong {
+  color: black;
 }
 
 .pet-text a {
@@ -508,109 +519,102 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 /*CAROUSEL SECTION*/
 
 .slider-section {
-  margin-top: 10rem;
-  height: 80vh;
-  box-shadow: 0px 1px 0px rgb(223, 221, 221);
-}
-
-.carousels {
-  display: flex;
-  justify-content: center;
-  max-width: 90%;
-  height: 25rem;
   margin: 0 auto;
-
+  margin-top: 5rem;
+}
+.carousels {
+  width: 130%;
+  height: 50rem;
+  margin-top: 10rem;
   position: relative;
 
+  padding: 0;
+  margin: 0 auto;
   overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.864);
 }
 
 .woof-slider {
-  position: absolute;
-  margin-top: 45px;
-  max-width: 90%;
-  height: 20rem;
-  font-size: 16px;
-  padding: 10px;
-  margin-left: 30px;
-
+  top: 10%;
+  height: 70vh;
+  box-shadow: 0px 1px 2px 3px rgb(226, 225, 225);
   display: flex;
-  gap: 10px;
-  border-radius: 10px;
-  align-items: center;
-  background-color: #343a40;
-  box-shadow: 0px 1px 1px 1px rgb(134, 134, 134);
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  width: 80%;
 }
 
 .woof-slider img {
-  max-width: 65%;
-  transform: scale(1.2);
-  box-shadow: 0px 2px 0 rgb(223, 221, 221);
+  object-fit: cover;
+}
+
+.slider-1 {
+  background-image: url("../img/3.png");
+  background-size: cover;
+}
+.slider-2 {
+  background-image: url("../img/Jessica\ Kowalski2.png");
+  background-size: cover;
+}
+
+.slider-3 {
+  background-image: url("../img/friends-3042751_1280.jpg");
+  background-size: cover;
 }
 
 .slider-tex {
-  margin-left: 75px;
+  padding: 1rem;
 }
 
 .slider-tex h2 {
   color: white;
-}
-
-.slider-tex h3 {
-  color: #f59f00;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  line-height: 24px;
+  font-size: 1.8rem;
 }
 
 .slider-tex p {
-  background-color: white;
-  text-align: center;
-  border-radius: 18px;
-  padding: 10px;
+  color: white;
+  font-size: 1rem;
+}
+
+.slider-tex h3 {
   color: black;
+  font-size: 1.3rem;
+}
+
+.slider-tex p {
+  background-color: #e67700;
+  width: 25%;
+  padding: 10px;
+  text-align: center;
   cursor: pointer;
-  box-shadow: 0px 2px 0 rgb(223, 221, 221);
-}
-
-.left-one {
-  position: absolute;
-  right: 0;
-  width: 4.5%;
-  stroke: white;
-  transform: translate(50%, 20%);
-  background-color: grey;
-  border-radius: 50%;
-  box-shadow: 1px 1px 2px rgb(223, 221, 221);
-  cursor: pointer;
-}
-
-.right-one {
-  position: absolute;
-  left: 0;
-  width: 4.5%;
-  stroke: white;
-  transform: translate(-100%, 20%);
-  background-color: grey;
-  border-radius: 50%;
-  box-shadow: 1px 1px 2px rgb(223, 221, 221);
-  cursor: pointer;
-}
-
-.left-one:hover {
-  stroke: #e67700;
-  background-color: white;
-}
-
-.right-one:hover {
-  stroke: #e67700;
-  background-color: white;
+  box-shadow: 0px 1px 1px 1px rgb(134, 134, 134);
 }
 
 .navigation-dots {
   position: absolute;
-  top: 99%;
-  left: 50%;
+  bottom: 30%;
+  left: 35%;
+}
+
+#right-one {
+  position: absolute;
+  background-color: white;
+  padding: 0 0.5rem;
+  top: 39%;
+  right: 23%;
+
+  border-radius: 50%;
+}
+
+#left-one {
+  position: absolute;
+  background-color: white;
+  padding: 0 0.5rem;
+  top: 40%;
+  left: 0%;
+
+  border-radius: 50%;
 }
 
 /*yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
@@ -621,111 +625,48 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy*/
 /*FOOTER*/
 
 .footer {
-  background-color: #495057;
-  margin-top: 75px;
-  height: 80vh;
-  overflow: scroll;
-}
-
-.footer::-webkit-scrollbar {
-  display: ruby-base;
-}
-
-.footer-table {
-  display: flex;
-  gap: 45px;
-  justify-content: space-between;
-
-  padding: 15px;
-  max-width: 100%;
-}
-
-.footer-table img {
-  max-width: 80%;
-  background-color: white;
-}
-
-.footer-table h1 {
-  color: white;
-  font-size: 18px;
-}
-
-.medias i {
-  color: white;
-}
-
-.footer-table p {
-  color: white;
-  font-size: 16px;
-}
-
-.footer-table strong {
-  color: #e67700;
-  font-size: 18px;
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  margin-top: 1rem;
+  background-color: #f3ece4;
+  border-top: 10px solid rgba(36, 35, 35, 0.089);
 }
 
 .condiments {
   display: flex;
-  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 1rem;
   justify-content: space-between;
-
-  gap: 45px;
+  padding: 15px;
 }
 
-.faq {
-  display: flex;
-  flex-direction: column;
-  text-decoration: underline;
+.condiments h1 {
+  font-size: 18px;
 }
 
-.about {
-  display: flex;
-  flex-direction: column;
-}
-
-.location {
-  display: flex;
-  flex-direction: column;
-  line-height: 14px;
-  text-decoration: underline;
+.condiments p {
+  font-size: 12px;
 }
 
 .footer-brag {
-  max-width: 30%;
-  display: grid;
-  row-gap: -10px;
-  text-decoration: underline;
-}
-
-.footer-brag h1 {
-  color: white;
+  font-display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
 }
 
 .brag {
-  color: white;
-  max-width: 60%;
+  border-bottom: 1px solid black;
 }
 
-.suscribe-btn {
-  max-width: 100%;
+.footer-brag img {
+  width: 70%;
 }
 
-.suscribe-btn input {
-  max-width: 400px;
-  height: 20%;
+.footer-brag h1 {
+  font-size: 18px;
 }
 
-.suscribe-btn input {
-  cursor: pointer;
-}
-
-.Copyright p {
-  border-top: solid orange;
-  color: white;
-  padding: 10px;
-  font-size: 16px;
-  margin-top: 45px;
+.Copyright {
+  font-size: 12px;
 }
 
 /*yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy
@@ -774,4 +715,9 @@ yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy for javascript*/
 
 .sticky-header a {
   color: #e67700;
+}
+
+.dot-active {
+  color: #e67700;
+  background-color: #e67700;
 }
