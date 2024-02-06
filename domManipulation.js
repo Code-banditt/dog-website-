@@ -14,7 +14,10 @@ const navDots = document.querySelector(".navigation-dots");
 const left = document.querySelector("#left-one");
 const right = document.querySelector("#right-one");
 
-//
+////pet page
+const petdisplay = document.querySelector(".advert-pets");
+
+/////////////////////
 //script toggle nav
 
 navigators.addEventListener("click", function () {
@@ -66,7 +69,7 @@ setInterval(function nexslide() {
     setTimeout(() => {
       currentIndex = 0;
       showsliders(currentIndex);
-    }, 4000);
+    }, 6000);
   }
 }, 6000);
 
@@ -90,3 +93,5 @@ function prevslide() {
 
 left.addEventListener("click", prevslide);
 right.addEventListener("click", nexslide);
+
+//pet section
