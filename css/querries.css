@@ -137,6 +137,10 @@
   .hero-image img {
     transform: scale(1.5);
   }
+
+  .Hero-page {
+    margin-top: 5rem;
+  }
   /*goods and services, section*/
   .managers {
     display: flex;
@@ -152,6 +156,10 @@
   /*slider section*/
   .left-one {
     z-index: 1;
+  }
+
+  .carousels {
+    height: 49rem;
   }
 }
 
@@ -237,7 +245,7 @@
 
   /*slider section*/
   .carousels {
-    height: 42rem;
+    height: 46rem;
   }
 }
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -252,13 +260,24 @@
   }
 }
 
+.pet {
+  width: 85%;
+  height: 90vh;
+  min-width: 40%;
+}
+
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 31rem $$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$4*/
 @media screen and (max-width: 31rem) {
+  /*modal content */
+  .modal-content {
+    height: 80vh;
+  }
   /*slider section*/
   /*slider section*/
   .carousels {
-    height: 28rem;
+    height: 32rem;
+    margin-top: 1.8rem;
   }
   .left-one {
     z-index: 1;
@@ -291,9 +310,21 @@
     transform: scaleX(1.3);
   }
 
-  .pet {
-    width: 75%;
-    height: 90vh;
+  .slider-1 {
+    background-size: contain;
+  }
+
+  /*pet-section*/
+  .annoucements {
+    font-size: 0.5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .pic {
+    width: 1.5rem;
+    height: 4vh;
+    font-size: 1.5rem;
   }
 }
 
