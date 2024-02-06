@@ -139,7 +139,7 @@
   }
 
   .Hero-page {
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   /*goods and services, section*/
   .managers {
@@ -246,6 +246,9 @@
   /*slider section*/
   .carousels {
     height: 46rem;
+  }
+  .woof-slider {
+    height: 110vh;
   }
 }
 /*$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
@@ -359,6 +362,10 @@
   }
   .slider-text h1 {
     font-size: 1rem;
+  }
+
+  .woof-slider {
+    height: 80vh;
   }
 }
 
